@@ -1,2 +1,2 @@
 # Javascript
-## javascript and my projects 
+## A collection of my JavaScript projects, including HTML and CSS.
