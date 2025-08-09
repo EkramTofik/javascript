@@ -1,4 +1,4 @@
-let value1=+(prompt("Write the first value"));
+        let value1=+(prompt("Write the first value"));
         let operator=prompt("Write the operator");
         let value2=+(prompt("Write the second value"));
         if(value1 ==="" ||  value2==="" ||  operator ===""|| value1 === null ||  value2=== null ||  operator === null ){
