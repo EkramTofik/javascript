@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let styles=["Jazz","Blues"];
+styles.push("Rock-n-Roll");
+styles[1]="Classics";
+styles.shift();
+console.log(styles);
+styles.unshift("Rap","Raggae");
+alert(styles);
+
+
+
+let arr=["a","b"];
+arr.push(function(){
+    alert(this);
+});
+arr[2]();
+
+ function sumInput() {
+      let numbers = [];
+
+      while (true) {
+        let value = prompt("Enter a number:", "");
+
+        // Stop if Cancel, empty input, or non-numeric
+        if (value === "" || value === null || !isFinite(value)) 
+        break;
+
+        numbers.push(+value);
+      }
+
+      let sum = 0;
+      for (let num of numbers) {
+        sum += num;
+      }
+
+      return sum;
+    }
+
+    alert("The sum is: " + sumInput());
+    </script>
+</body>
+</html>
