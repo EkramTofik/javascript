@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getMaxSubSum(arra){
+    let newarr=[];
+  
+for (let val=0; val<arra.length;val++){
+  let sum=0;
+    for(value=val; value<arra.length; value++){
+        sum+=arra[value];
+         newarr.push(sum);
+
+    }
+}
+if (Math.max(...newarr) <0){
+    return 0;
+}
+return Math.max(...newarr);
+
+}
+
+
+let arr=[1,2];
+let arr1=[-1,-2,-3];
+let arr2=[-1,2,3];
+
+alert(getMaxSubSum(arr));
+alert(getMaxSubSum(arr1));
+alert(getMaxSubSum(arr2));
+
+    </script>
+</body>
+</html>
