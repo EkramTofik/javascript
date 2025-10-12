@@ -1,15 +1,17 @@
 let arr = ["HTML", "JavaScript", "CSS"];
-let sorted=[];
 function copySorted(arr){
+let sorted=[];
 
 for(let value of arr){
     sorted.push(value);
 }    
-    sorted.sort();
+    
+sorted.sort();
     return sorted;
 
 }
-copySorted(arr);
-console.log(sorted);
+let result=copySorted(arr);
+console.log(result);
 console.log(arr);
-
+console.log(result);
+console.log(copySorted(arr));
