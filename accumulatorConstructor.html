@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Accumulator(num){
+this.num=num;
+this.value=this.num;
+this.read=function(){
+    this.value+=+(prompt("enter any value",));
+}
+}
+let accumulator=new Accumulator(1);
+accumulator.read();
+accumulator.read();
+alert(accumulator.value);
+    </script>
+</body>
+</html>
