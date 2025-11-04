@@ -1,6 +1,6 @@
 function fibonancy(n){
 let sum;
-if(n==1 || n==2){
+if(n<=2){
 return 1;
 }
 else{
