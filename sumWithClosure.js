@@ -1,8 +1,7 @@
 function sumWithClosure(a){
     return function(b){
-console.log(a+b);
-
+return a+b;
     };
 }
-sumWithClosure(5)(3);
-sumWithClosure(5)(-3);
+console.log(sumWithClosure(5)(3));
+console.log(sumWithClosure(5)(-3));
