@@ -8,17 +8,13 @@
 <body>
     <ul class="parent"></ul>
     <script>
-        let listArr=[];
         let untitledList=document.querySelector('.parent');
         let text =prompt("enter the content of the list");
         while(text!==null && text!== ""){
         let list=document.createElement('li');
-        list.innerHTML=text;
-        listArr.push(list);
+        list.textContent=text;
+        untitledList.append(list);
         text =prompt("enter the content of the list");
-        }
-        for(let each of listArr){       
-        untitledList.append(each);
         }
     </script>
 </body>
