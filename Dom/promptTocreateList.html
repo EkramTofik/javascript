@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="parent"></ul>
+    <script>
+        let listArr=[];
+        let untitledList=document.querySelector('.parent');
+        let text =prompt("enter the content of the list");
+        while(text!==null && text!== ""){
+        let list=document.createElement('li');
+        list.innerHTML=text;
+        listArr.push(list);
+        text =prompt("enter the content of the list");
+        }
+        for(let each of listArr){       
+        untitledList.append(each);
+        }
+    </script>
+</body>
+</html>
